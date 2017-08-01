@@ -41,5 +41,6 @@ def get_open_issues_amount(repo_owner, repo_name):
     return responce.json()
 
 if __name__ == '__main__':
-    repositories = get_trending_repositories(20)
+    repo_quantity = 20
+    repositories = get_trending_repositories(repo_quantity)
     print_repos(repositories)
